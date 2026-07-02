@@ -1,0 +1,143 @@
+================================================================================
+SUBCIRCUIT SPECIFICATIONS (logical coords, YO=200 for XML)
+================================================================================
+
+--- clock_reset ---
+  Local BBox:  (54,165) to (1190,900)
+  Size:        1156 x 755 px
+  Components:  14  Wires: 30
+  Placement:   (0, -100)
+  Global BBox: (54,65) to (1190,800)
+  Ports (14):
+    OUT ck_out                    w=1  local=( 1180,  840)  global=( 1180,  740)
+    OUT ck_pc                     w=1  local=(  180,  260)  global=(  180,  160)
+    OUT ck_r0                     w=1  local=(  740,  180)  global=(  740,   80)
+    OUT ck_r1                     w=1  local=(  740,  320)  global=(  740,  220)
+    OUT ck_r2                     w=1  local=(  740,  465)  global=(  740,  365)
+    OUT ck_r3                     w=1  local=(  740,  600)  global=(  740,  500)
+    IN  clk_in                    w=1  local=(   60,  200)  global=(   60,  100)
+    IN  rst_in                    w=1  local=(   60,  280)  global=(   60,  180)
+    OUT rst_out                   w=1  local=( 1190,  840)  global=( 1190,  740)
+    OUT rst_pc                    w=1  local=(  190,  260)  global=(  190,  160)
+    OUT rst_r0                    w=1  local=(  750,  180)  global=(  750,   80)
+    OUT rst_r1                    w=1  local=(  750,  320)  global=(  750,  220)
+    OUT rst_r2                    w=1  local=(  750,  460)  global=(  750,  360)
+    OUT rst_r3                    w=1  local=(  750,  600)  global=(  750,  500)
+
+--- pc ---
+  Local BBox:  (-50,10) to (280,570)
+  Size:        350 x 580 px
+  Components:  15  Wires: 28
+  Placement:   (100, 100)
+  Global BBox: (50,110) to (380,670)
+  Ports (7):
+    IN  branch_offset             w=2  local=(   60,  440)  global=(  160,  540)
+    IN  ck                        w=1  local=(   80,   60)  global=(  180,  160)
+    IN  clr                       w=1  local=(   90,   60)  global=(  190,  160)
+    IN  mux_sel                   w=1  local=(  260,  370)  global=(  360,  470)
+    OUT pc_q                      w=8  local=(  100,   40)  global=(  200,  140)
+    OUT pc_q_fetch                w=8  local=(  280,   10)  global=(  380,  110)
+    IN  rst_and                   w=1  local=(  -40,   80)  global=(   60,  180)
+
+--- fetch_decode ---
+  Local BBox:  (40,30) to (380,310)
+  Size:        360 x 300 px
+  Components:  17  Wires: 10
+  Placement:   (340, 50)
+  Global BBox: (380,80) to (720,360)
+  Ports (13):
+    OUT dec_out0                  w=1  local=(  330,  270)  global=(  670,  320)
+    OUT dec_out1                  w=1  local=(  330,  280)  global=(  670,  330)
+    OUT dec_out2                  w=1  local=(  330,  290)  global=(  670,  340)
+    OUT dec_out3                  w=1  local=(  330,  300)  global=(  670,  350)
+    OUT opcode_hi                 w=2  local=(  220,   30)  global=(  560,   80)
+    OUT opcode_lo                 w=2  local=(  220,   40)  global=(  560,   90)
+    IN  pc_addr                   w=8  local=(   40,   60)  global=(  380,  110)
+    OUT rs1_addr                  w=2  local=(  220,   50)  global=(  560,  100)
+    OUT rs1_fan0                  w=1  local=(  380,   40)  global=(  720,   90)
+    OUT rs1_fan1                  w=1  local=(  380,   50)  global=(  720,  100)
+    OUT rs2_fan0                  w=1  local=(  380,   70)  global=(  720,  120)
+    OUT rs2_fan1                  w=1  local=(  380,   80)  global=(  720,  130)
+    OUT rs2_imm                   w=2  local=(  220,   60)  global=(  560,  110)
+
+--- gpr_rmux ---
+  Local BBox:  (40,-20) to (420,510)
+  Size:        400 x 550 px
+  Components:  40  Wires: 43
+  Placement:   (640, 70)
+  Global BBox: (680,50) to (1060,580)
+  Ports (25):
+    IN  ck_r0                     w=1  local=(  100,   90)  global=(  740,  160)
+    IN  ck_r1                     w=1  local=(  100,  230)  global=(  740,  300)
+    IN  ck_r2                     w=1  local=(  100,  370)  global=(  740,  440)
+    IN  ck_r3                     w=1  local=(  100,  510)  global=(  740,  580)
+    IN  clr_r0                    w=1  local=(  110,   90)  global=(  750,  160)
+    IN  clr_r1                    w=1  local=(  110,  230)  global=(  750,  300)
+    IN  clr_r2                    w=1  local=(  110,  370)  global=(  750,  440)
+    IN  clr_r3                    w=1  local=(  110,  510)  global=(  750,  580)
+    IN  d_r0                      w=8  local=(   90,   90)  global=(  730,  160)
+    IN  d_r1                      w=8  local=(   90,  230)  global=(  730,  300)
+    IN  d_r2                      w=8  local=(   90,  370)  global=(  730,  440)
+    IN  d_r3                      w=8  local=(   90,  510)  global=(  730,  580)
+    IN  en_r0                     w=1  local=(   90,   70)  global=(  730,  140)
+    IN  en_r1                     w=1  local=(   90,  210)  global=(  730,  280)
+    IN  en_r2                     w=1  local=(   90,  350)  global=(  730,  420)
+    IN  en_r3                     w=1  local=(   90,  490)  global=(  730,  560)
+    OUT raddr_out                 w=2  local=(  220,  -20)  global=(  860,   50)
+    OUT rmux1_out                 w=8  local=(  420,  160)  global=( 1060,  230)
+    IN  rmux1_sel_ab              w=1  local=(  280,  130)  global=(  920,  200)
+    IN  rmux1_sel_cd              w=1  local=(  280,  230)  global=(  920,  300)
+    IN  rmux1_sel_top             w=1  local=(  400,  180)  global=( 1040,  250)
+    OUT rmux2_out                 w=8  local=(  420,  380)  global=( 1060,  450)
+    IN  rmux2_sel_ab              w=1  local=(  280,  350)  global=(  920,  420)
+    IN  rmux2_sel_cd              w=1  local=(  280,  450)  global=(  920,  520)
+    IN  rmux2_sel_top             w=1  local=(  400,  400)  global=( 1040,  470)
+
+--- alu ---
+  Local BBox:  (60,30) to (100,240)
+  Size:        60 x 230 px
+  Components:  7  Wires: 5
+  Placement:   (1100, 150)
+  Global BBox: (1160,180) to (1200,390)
+  Ports (4):
+    IN  a                         w=8  local=(   60,   40)  global=( 1160,  190)
+    IN  b                         w=8  local=(   60,   60)  global=( 1160,  210)
+    OUT eq                        w=1  local=(  100,  230)  global=( 1200,  380)
+    OUT sum                       w=8  local=(  100,   50)  global=( 1200,  200)
+
+--- control ---
+  Local BBox:  (20,30) to (500,350)
+  Size:        500 x 340 px
+  Components:  20  Wires: 28
+  Placement:   (640, 640)
+  Global BBox: (660,670) to (1140,990)
+  Ports (11):
+    OUT branch_taken              w=1  local=(  220,  100)  global=(  860,  740)
+    IN  comp_eq                   w=1  local=(   20,  100)  global=(  660,  740)
+    IN  dec0                      w=1  local=(  190,  190)  global=(  830,  830)
+    IN  dec1                      w=1  local=(  190,  210)  global=(  830,  850)
+    IN  dec3                      w=1  local=(  190,  110)  global=(  830,  750)
+    OUT is_gpr_write              w=1  local=(  360,  200)  global=( 1000,  840)
+    IN  waddr                     w=2  local=(  220,  290)  global=(  860,  930)
+    OUT wen0                      w=1  local=(  500,   40)  global=( 1140,  680)
+    OUT wen1                      w=1  local=(  500,  140)  global=( 1140,  780)
+    OUT wen2                      w=1  local=(  500,  240)  global=( 1140,  880)
+    OUT wen3                      w=1  local=(  500,  340)  global=( 1140,  980)
+
+--- writeback ---
+  Local BBox:  (-580,50) to (240,480)
+  Size:        840 x 450 px
+  Components:  15  Wires: 12
+  Placement:   (1120, 500)
+  Global BBox: (540,550) to (1360,980)
+  Ports (9):
+    IN  alu_result                w=8  local=(   50,   50)  global=( 1170,  550)
+    IN  ck                        w=1  local=(   60,  240)  global=( 1180,  740)
+    IN  clr                       w=1  local=(   70,  240)  global=( 1190,  740)
+    IN  imm_in                    w=2  local=( -580,  140)  global=(  540,  640)
+    OUT imm_out_to_mux            w=8  local=( -540,  210)  global=(  580,  710)
+    IN  is_io                     w=1  local=(  220,   80)  global=( 1340,  580)
+    IN  is_li                     w=1  local=(   60,   80)  global=( 1180,  580)
+    IN  out_d                     w=8  local=(   50,  220)  global=( 1170,  720)
+    OUT wdata                     w=8  local=(  240,   60)  global=( 1360,  560)
+

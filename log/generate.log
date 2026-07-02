@@ -1,0 +1,27 @@
+
+[OK] 47 components, 273 wires -> Logisim/sCPU_F6.circ
+[i]  y offset +200, all L-shaped routing
+[i] Exact pin coords based on Logisim-evolution source
+[OK] No wire-through-pin violations (160 pins checked)
+[i] Unconnected pins (23):
+  Adder.B at (160,330)
+  Adder.COUT at (180,340)
+  AND Gate.IN1 at (350,570)
+  Decoder.OUT0 at (670,320)
+  Multiplexer.IN1 at (890,20)
+  Multiplexer.IN1 at (990,20)
+  Adder.COUT at (1180,220)
+  Comparator.GT at (1200,370)
+  Comparator.LT at (1200,390)
+  OR Gate.IN1 at (970,850)
+  AND Gate.IN1 at (1110,690)
+  AND Gate.IN1 at (1110,790)
+  AND Gate.IN1 at (1110,890)
+  AND Gate.IN1 at (1110,990)
+  Register.Q at (1200,720)
+  Shifter.IN at (720,630)
+  Shifter.AMT at (720,650)
+  Shifter.OUT at (760,640)
+  ROM.Q at (380,100)
+  ROM.D at (350,100)
+  ... and 3 more

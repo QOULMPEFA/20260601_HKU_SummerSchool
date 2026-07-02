@@ -1,0 +1,10 @@
+Total wire segments: 273
+Logical nets: 5
+
+[WARN] Found 1 cross-net overlap(s):
+
+  --- V-V overlap (1 instances) ---
+    x=1060: nets 254 vs 217, y=[130..130]
+
+
+=== Detailed overlaps ===

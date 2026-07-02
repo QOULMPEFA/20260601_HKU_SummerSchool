@@ -1,0 +1,44 @@
+Total logical nets: 5
+
+--- Net 1 (266 wires, 133 pins) ---
+  A: Adder, Comparator
+  ADDR: ROM
+  B: Adder, Comparator
+  CIN: Adder
+  CK: Register
+  CLR: Register
+  COMB: Splitter
+  D: Register
+  DATA: ROM
+  EN: Register
+  EQ: Comparator
+  FAN0: Splitter
+  FAN1: Splitter
+  FAN2: Splitter
+  FAN3: Splitter
+  IN: Bit Extender, NOT Gate
+  IN0: AND Gate, Multiplexer, OR Gate
+  IN1: AND Gate, Multiplexer, OR Gate
+  OUT: AND Gate, Adder, Bit Extender, Constant, Multiplexer, NOT Gate, OR Gate
+  OUT0: Decoder
+  OUT1: Decoder
+  OUT2: Decoder
+  OUT3: Decoder
+  PORT: Pin
+  Q: Register
+  SEL: Decoder, Multiplexer
+
+--- Net 2 (2 wires, 2 pins) ---
+  IN0: Multiplexer
+  OUT: Constant
+
+--- Net 3 (2 wires, 2 pins) ---
+  IN0: Multiplexer
+  OUT: Multiplexer
+
+--- Net 4 (2 wires, 2 pins) ---
+  IN0: Multiplexer
+  OUT: Multiplexer
+
+--- Net 5 (1 wires, 1 pins) ---
+  OUT: Multiplexer

@@ -1,0 +1,24 @@
+# Logisim source code (193MB, reference only)
+logisim_github/
+
+# Large binary files
+*.zip
+*.jar
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Archive of old circuit versions
+Logisim/archive/
+
+# Output copies
+Logisim/output/
+
+# Claude Code internal
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
